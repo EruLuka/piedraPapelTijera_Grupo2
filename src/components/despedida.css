@@ -1,6 +1,6 @@
 img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 30%;
+    max-height: auto;
 }
 
 p{font-size: 50px;}
@@ -8,7 +8,12 @@ h3{font-size: 80px;}
 ul{font-size: 50px;}
 
 body{
-    background: url("../Assets/Fondo2.jpg") fixed;
+    background: url("/public/assets/Fondo2.jpg") fixed;
     background-size: cover;
     color: white;
+}
+
+.ImagenBoton{
+    display: flex;
+    justify-content: center;
 }

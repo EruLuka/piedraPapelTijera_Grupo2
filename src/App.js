@@ -1,7 +1,7 @@
 import './App.css';
-import './components/despedida.css';
+import './components/Despedida.css';
 //import Integrantes from "./components/Integrantes";
-import Despedida from "./components/despedida";
+import Despedida from './components/Despedida';
 
 /*function App() {
   return (
