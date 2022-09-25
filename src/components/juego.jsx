@@ -26,7 +26,7 @@ function Juego() {
         <aside className="right-area">
           <div className="img-cpu">
             <img
-              src="https://picsum.photos/id/684/600/400"
+              src="/assets/Mew.png"
               alt="imagen cpu"
             ></img>
           </div>
@@ -38,14 +38,14 @@ function Juego() {
           </div>
         </aside>
         <footer className="choosing-area">
-          <Button variant="primary" onclick={[]}>
-            <img src="https://picsum.photos/id/514/600/400" alt="piedra"></img>
+          <Button className="type-button" variant="primary" onclick={[]}>
+            <img src="/assets/FireType.png" alt="piedra"></img>
           </Button>
-          <Button variant="primary" onclick={[]}>
-            <img src="https://picsum.photos/id/605/600/400" alt="papel"></img>
+          <Button className="type-button" variant="primary" onclick={[]}>
+            <img src="/assets/WaterType.png" alt="papel"></img>
           </Button>
-          <Button variant="primary" onclick={[]}>
-            <img src="https://picsum.photos/id/655/600/400" alt="tijeras"></img>
+          <Button className="type-button" variant="primary" onclick={[]}>
+            <img src="/assets/GrassType.png" alt="tijeras"></img>
           </Button>
         </footer>
       </div>
