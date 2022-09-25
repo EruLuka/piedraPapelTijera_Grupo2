@@ -1,19 +1,17 @@
-img{
-    max-width: 30%;
-    max-height: auto;
+.Despedida img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
-p{font-size: 50px;}
-h3{font-size: 80px;}
-ul{font-size: 50px;}
-
-body{
-    background: url("/public/assets/Fondo2.jpg") fixed;
-    background-size: cover;
-    color: white;
+#despedida-titulo{
+    font-size: 50px;
 }
 
-.ImagenBoton{
-    display: flex;
-    justify-content: center;
+#despedida-texto1{
+    font-size: 80px;
 }
+
+#despedida-texto2{
+    font-size: 50px;
+}
+

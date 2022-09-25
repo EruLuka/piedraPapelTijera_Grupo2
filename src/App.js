@@ -1,12 +1,13 @@
 import './App.css';
-import './components/Despedida.css';
-//import Integrantes from "./components/Integrantes";
-import Despedida from './components/Despedida';
+import Integrantes from "./components/Integrantes";
+import Juego from './components/juego';
+import './components/despedida.css';
+import Despedida from "./components/Despedida";
 
 /*function App() {
   return (
     <div className="App">
-      <Integrantes/>
+      <Juego/>
     </div>
   );
 }
