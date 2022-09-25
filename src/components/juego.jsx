@@ -6,11 +6,20 @@ import { useEffect, useState } from "react";
 function Juego() {
   const [jugador, setJugador] = useState("/assets/logo2.png");
   const [jugada, setJugada] = useState("/assets/SignoPregunta.png");
+  const [jugadaCPU, setJugadaCPU] = useState("/assets/SignoPregunta.png");
   
 
   const hacerJugada = (srcJugador, srcJugada) => {
     setJugador(srcJugador)
     setJugada(srcJugada)
+    let nro= Math.floor(Math.random()*3);
+    if (nro===0){
+      setJugadaCPU("/assets/FireType.png")
+    } else if (nro===1){
+      setJugadaCPU("/assets/WaterType.png")
+    }else{
+      setJugadaCPU("/assets/GrassType.png")
+    }
   }
 
   /* Math.floor(Math.random()*3) */
@@ -28,7 +37,7 @@ function Juego() {
           <aside className="area">
             <div className="img-jugada-cpu">
               <img
-                src={jugada}
+                src={jugadaCPU}
                 alt="imagen jugada cpu"
               ></img>
             </div>
