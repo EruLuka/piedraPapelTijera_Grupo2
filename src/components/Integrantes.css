@@ -1,5 +1,6 @@
 .carousel{
   text-align: center;
+  padding: 2%;
 }
 
 .carousel-style {
@@ -8,7 +9,7 @@
   
 .carousel.slide img {
   width: auto;
-  height: 630px;
+  height: 90vh;
 }
   
 .carousel-caption {
