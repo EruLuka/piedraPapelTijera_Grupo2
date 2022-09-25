@@ -1,10 +1,11 @@
 import './App.css';
-import Integrantes from "./components/Integrantes";
+//import Integrantes from "./components/Integrantes";
+import Juego from './components/juego';
 
 function App() {
   return (
     <div className="App">
-      <Integrantes/>
+      <Juego/>
     </div>
   );
 }
