@@ -1,6 +1,6 @@
 [
     {
-        "img":"/",
+        "img":"/assets/SosaCorrea.jpeg",
         "nombre":"Elias Maximiliano Cruz",
         "descripcion":"1"
     },
@@ -20,7 +20,7 @@
         "descripcion":"4"
     },
     {
-        "img":"/",
+        "img":"/assets/SosaCorrea.jpeg",
         "nombre":"Agustín Cesar Sosa Correa",
         "descripcion":"5"
     },

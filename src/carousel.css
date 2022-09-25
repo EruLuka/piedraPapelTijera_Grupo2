@@ -1,0 +1,12 @@
+.carousel-style {
+  height: 100%;
+}
+  
+.carousel.slide img {
+  width: auto;
+  height: 630px;
+}
+  
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+}
