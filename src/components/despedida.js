@@ -9,5 +9,4 @@ function Despedida(){
          </div>
     )
 }
-
 export default Despedida;

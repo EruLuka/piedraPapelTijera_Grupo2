@@ -53,5 +53,4 @@ function Juego() {
     </>
   );
 }
-
 export default Juego;
