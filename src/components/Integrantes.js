@@ -20,7 +20,7 @@ function Integrantes() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src="" alt="Mendivil Cabrera"/>
+        <img src="/assets/MendivilCabrera.jpeg" alt="Mendivil Cabrera"/>
         <Carousel.Caption>
           <h3>Nicole Estefania Mendivil Cabrera</h3>
           <p>
