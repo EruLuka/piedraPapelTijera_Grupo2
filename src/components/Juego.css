@@ -5,7 +5,7 @@
 }
 
 .full-gameArea{
-    height:75vh;
+    height:70vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,11 +19,18 @@
 }
 
 .img-jugada-cpu{
+    text-align: right;
+}
+.img-jugada-cpu img{
     height: 25vh;
 }
 
 .img-jugador{
-    height: 50vh;
+    text-align: left;
+    width: 50vw;
+}
+.img-jugador img{
+    height: 40vh;
 }
 
 .choosing-area{

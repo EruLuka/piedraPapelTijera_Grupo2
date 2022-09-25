@@ -6,23 +6,33 @@ import { useEffect, useState } from "react";
 function Juego() {
   const [jugador, setJugador] = useState("/assets/logo2.png");
   const [jugada, setJugada] = useState("/assets/SignoPregunta.png");
+  const [jugadorCPU, setJugadorCPU] = useState("/assets/logo2.png");
   const [jugadaCPU, setJugadaCPU] = useState("/assets/SignoPregunta.png");
   
 
   const hacerJugada = (srcJugador, srcJugada) => {
-    setJugador(srcJugador)
-    setJugada(srcJugada)
-    let nro= Math.floor(Math.random()*3);
-    if (nro===0){
-      setJugadaCPU("/assets/FireType.png")
-    } else if (nro===1){
-      setJugadaCPU("/assets/WaterType.png")
+    setJugador(srcJugador);
+    setJugada(srcJugada);
+    let ataque= Math.floor(Math.random()*3);
+    let enemigo= Math.floor(Math.random()*4);
+
+    if (ataque === 0){
+      setJugadaCPU("/assets/FireType.png");
+    } else if (ataque === 1){
+      setJugadaCPU("/assets/WaterType.png");
     }else{
-      setJugadaCPU("/assets/GrassType.png")
+      setJugadaCPU("/assets/GrassType.png");
+    }
+    switch (enemigo){
+      case 0: setJugadorCPU("/assets/Charizard.png");
+        break;
+      case 1: setJugadorCPU("/assets/Feraligatr.png");
+        break;
+      case 2: setJugadorCPU("/assets/Sceptile.png");
+        break;
+      case 3: setJugadorCPU("/assets/Mew.png");
     }
   }
-
-  /* Math.floor(Math.random()*3) */
 
   /* useEffect(()=>{
 
@@ -36,24 +46,18 @@ function Juego() {
           {/* Área izquierda */}
           <aside className="area">
             <div className="img-jugada-cpu">
-              <img
-                src={jugadaCPU}
-                alt="imagen jugada cpu"
-              ></img>
+              <img src={jugadaCPU} alt="imagen jugada cpu"></img>
             </div>
             <div className="img-jugador">
-              <img
-                src={jugador}
-                alt="imagen jugador"
-              ></img>
               <p>Puntaje jugador</p>
+              <img src={jugador} alt="imagen jugador"></img>
             </div>
           </aside>
 
           {/* Área derecha */}
           <aside className="area">
             <div className="img-cpu">
-              <img src="/assets/Mew.png" alt="imagen cpu"></img>
+              <img src={jugadorCPU} alt="imagen cpu"></img>
             </div>
             <p>Puntaje CPU</p>
             <div>
