@@ -1,4 +1,3 @@
-import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import '../carousel.css'
 
@@ -20,7 +19,7 @@ function Integrantes() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src="" alt="Mendivil Cabrera"/>
+        <img src="/assets/MendivilCabrera.jpeg" alt="Mendivil Cabrera"/>
         <Carousel.Caption>
           <h3>Nicole Estefania Mendivil Cabrera</h3>
           <p>
@@ -29,7 +28,7 @@ function Integrantes() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src="" alt="Planckensteiner"/>
+        <img src="/assets/prueba.png" alt="Planckensteiner"/>
         <Carousel.Caption>
           <h3>German Matias Planckensteiner</h3>
           <p>
