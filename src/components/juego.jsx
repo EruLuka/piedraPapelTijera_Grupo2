@@ -60,11 +60,8 @@ function Juego() {
               <img src={jugadorCPU} alt="imagen cpu"></img>
             </div>
             <p>Puntaje CPU</p>
-            <div>
-              <img
-                src={jugada}
-                alt="imagen jugada jugador"
-              ></img>
+            <div className="img-jugada-jugador">
+              <img src={jugada} alt="imagen jugada jugador"></img>
             </div>
           </aside>
         </div>
