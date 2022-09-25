@@ -1,10 +1,17 @@
 import Button from "react-bootstrap/Button";
 import "./Juego.css";
 import Barra from "./Barra";
+import { useEffect, useState } from "react";
 
 function Juego() {
+  const [jugada, setJugada] = useState(Math.floor(Math.random()*3))
+
+  useEffect(()=>{
+
+  }, [])
   return (
     <>
+    <h1>{jugada}</h1>
       <div><Barra/></div>
       <section id="juego" className="gameContent">
         
@@ -43,14 +50,14 @@ function Juego() {
 
         {/* Àrea de elecciòn de jugada */}
         <footer className="choosing-area">
-          <Button className="type-button" variant="primary" onclick={[]}>
-            <img src="/assets/FireType.png" alt="piedra"></img>
+          <Button className="type-button" variant="primary" onClick={[() => setJugada()]}>
+            <img src="/assets/FireType.png" alt="fuego"></img>
           </Button>
-          <Button className="type-button" variant="primary" onclick={[]}>
-            <img src="/assets/WaterType.png" alt="papel"></img>
+          <Button className="type-button" variant="primary" onClick={[]}>
+            <img src="/assets/WaterType.png" alt="agua"></img>
           </Button>
-          <Button className="type-button" variant="primary" onclick={[]}>
-            <img src="/assets/GrassType.png" alt="tijeras"></img>
+          <Button className="type-button" variant="primary" onClick={[]}>
+            <img src="/assets/GrassType.png" alt="hoja"></img>
           </Button>
         </footer>
 
@@ -58,4 +65,5 @@ function Juego() {
     </>
   );
 }
+
 export default Juego;

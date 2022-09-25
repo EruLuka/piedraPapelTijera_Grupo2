@@ -6,11 +6,16 @@
 
 .full-gameArea{
     height:75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .area{
     flex-direction: column;
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .img-jugada-cpu{
