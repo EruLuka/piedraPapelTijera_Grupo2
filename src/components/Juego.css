@@ -1,5 +1,4 @@
 .gameContent{
-    display:flex;
     flex-direction: row;
     height: 85vh;
 }
