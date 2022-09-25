@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 85vh;
+    width: 100vw;
 }
 
 .full-gameArea{
@@ -17,7 +18,7 @@
     margin-left: 5%;
     margin-right: 5%;
 }
-
+/* Área izquierda */
 .img-jugada-cpu{
     text-align: right;
 }
@@ -30,6 +31,22 @@
     width: 50vw;
 }
 .img-jugador img{
+    height: 40vh;
+}
+
+/* Área derecha */
+.img-cpu{
+    text-align: right;
+    width: 50vw;
+}
+.img-cpu img{
+    height: 25vh;
+}
+
+.img-jugada-jugador{
+    text-align: left;
+}
+.img-jugada-jugador img{
     height: 40vh;
 }
 
