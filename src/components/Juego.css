@@ -3,3 +3,19 @@
     flex-direction: row;
     height: 85vh;
 }
+
+.full-gameArea{
+    height:75vh;
+}
+
+.left-area{
+    flex-direction: column;
+}
+
+.img-jugada-cpu{
+    height: 25vh;
+}
+
+.img-jugador{
+    height: 50vh;
+}
