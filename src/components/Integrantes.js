@@ -50,7 +50,7 @@ function Integrantes() {
         <Carousel.Caption>
           <h3>Conrado Abel Dario Velazquez</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            <a href='https://www.instagram.com/conra.ue/'> Instagram </a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>
