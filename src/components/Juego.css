@@ -18,3 +18,36 @@
 .img-jugador{
     height: 50vh;
 }
+
+.choosing-area{
+    background-image: url(/public/assets/Fondo2.jpg);
+    background-size: 100%;
+    height: 25vh;
+}
+
+.choosing-area{
+    height: 25vh;
+    width: 100%;
+    background-image: url(/public/assets/TextoPelea.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.choosing-area img{
+    height: 25vh;
+}
+
+.choosing-area button{
+    width: 20vw;
+    height: 15vh;
+}
+
+.type-button img{
+    width: auto;
+    height: 100%;
+}
