@@ -1,5 +1,6 @@
 .gameContent{
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     height: 85vh;
 }
 
@@ -7,8 +8,9 @@
     height:75vh;
 }
 
-.left-area{
+.area{
     flex-direction: column;
+    text-align: center;
 }
 
 .img-jugada-cpu{
