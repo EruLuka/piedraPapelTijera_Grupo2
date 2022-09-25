@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import '../carousel.css'
+import './Integrantes.css'
 
 function Integrantes() {
   return (
@@ -28,11 +28,11 @@ function Integrantes() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src="/assets/prueba.png" alt="Planckensteiner"/>
+        <img src="/assets/Planckensteiner.jpg" alt="Planckensteiner"/>
         <Carousel.Caption>
           <h3>German Matias Planckensteiner</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <a href='https://www.instagram.com/mati_planck/'> Instagram </a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -50,7 +50,7 @@ function Integrantes() {
         <Carousel.Caption>
           <h3>Conrado Abel Dario Velazquez</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            <a href='https://www.instagram.com/conra.ue/'> Instagram </a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>
