@@ -4,14 +4,22 @@ import Barra from "./Barra";
 import { useEffect, useState } from "react";
 
 function Juego() {
-  const [jugada, setJugada] = useState(Math.floor(Math.random()*3))
+  const [jugador, setJugador] = useState("/assets/logo2.png");
+  const [jugada, setJugada] = useState("/assets/SignoPregunta.png");
+  
 
-  useEffect(()=>{
+  const hacerJugada = (srcJugador, srcJugada) => {
+    setJugador(srcJugador)
+    setJugada(srcJugada)
+  }
 
-  }, [])
+  /* Math.floor(Math.random()*3) */
+
+  /* useEffect(()=>{
+
+  }, []) */
   return (
     <>
-    <h1>{jugada}</h1>
       <div><Barra/></div>
       <section id="juego" className="gameContent">
         
@@ -20,13 +28,13 @@ function Juego() {
           <aside className="area">
             <div className="img-jugada-cpu">
               <img
-                src="https://picsum.photos/id/237/600/400"
+                src={jugada}
                 alt="imagen jugada cpu"
               ></img>
             </div>
             <div className="img-jugador">
               <img
-                src="https://picsum.photos/id/548/600/400"
+                src={jugador}
                 alt="imagen jugador"
               ></img>
               <p>Puntaje jugador</p>
@@ -41,7 +49,7 @@ function Juego() {
             <p>Puntaje CPU</p>
             <div>
               <img
-                src="https://picsum.photos/id/1060/600/400"
+                src={jugada}
                 alt="imagen jugada jugador"
               ></img>
             </div>
@@ -50,13 +58,13 @@ function Juego() {
 
         {/* Àrea de elecciòn de jugada */}
         <footer className="choosing-area">
-          <Button className="type-button" variant="primary" onClick={[() => setJugada()]}>
+          <Button className="type-button" variant="primary" onClick={() => hacerJugada("/assets/CharizardBack.png","/assets/FireType.png")}>
             <img src="/assets/FireType.png" alt="fuego"></img>
           </Button>
-          <Button className="type-button" variant="primary" onClick={[]}>
+          <Button className="type-button" variant="primary" onClick={() => hacerJugada("/assets/FeraligatrBack.png","/assets/WaterType.png")}>
             <img src="/assets/WaterType.png" alt="agua"></img>
           </Button>
-          <Button className="type-button" variant="primary" onClick={[]}>
+          <Button className="type-button" variant="primary" onClick={() => hacerJugada("/assets/SceptileBack.png","/assets/GrassType.png")}>
             <img src="/assets/GrassType.png" alt="hoja"></img>
           </Button>
         </footer>
