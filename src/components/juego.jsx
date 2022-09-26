@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import "./Juego.css";
-import Barra from "./Barra";
+import Barra from "../routes/Barra";
 import { useEffect, useState } from "react";
 
 function Juego() {
@@ -48,9 +48,9 @@ function Juego() {
     }
 
     if (
-      (eleccion == 0 && ataque == 2) ||
-      (eleccion == 1 && ataque == 0) ||
-      (eleccion == 2 && ataque == 1)
+      (eleccion === 0 && ataque === 2) ||
+      (eleccion === 1 && ataque === 0) ||
+      (eleccion === 2 && ataque === 1)
     ) {
       setPuntaje(puntaje + 1);
       setResultado("¡¡¡GANASTE!!!");
