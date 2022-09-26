@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import './Integrantes.css'
+import '../components/Integrantes.css'
 
 function Integrantes(){ 
   return (
