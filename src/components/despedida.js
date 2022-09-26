@@ -1,4 +1,4 @@
-import './despedida.css';
+import "./despedida.css";
 
 function Despedida(){
     return(
