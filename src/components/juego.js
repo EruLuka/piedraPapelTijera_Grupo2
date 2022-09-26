@@ -9,7 +9,7 @@ const Juego=()=> {
   const [jugadaCPU, setJugadaCPU] = useState("/assets/SignoPregunta.png");
   const [puntaje, setPuntaje] = useState(0);
   const [puntajeCPU, setPuntajeCPU] = useState(0);
-  const [resultado, setResultado] = useState();
+  const [resultado, setResultado] = useState("Haz una jugada...");
 
   const hacerJugada = (srcJugador, srcJugada, eleccion) => {
     setJugador(srcJugador);
