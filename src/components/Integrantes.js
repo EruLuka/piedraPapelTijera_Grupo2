@@ -1,12 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
-import '../components/Integrantes.css'
+import './Integrantes.css'
 
 function Integrantes(){ 
   return (
     <Carousel>
-      <div>
-        <h1>Ver integrantes</h1>
-      </div>
       <Carousel.Item>
         <img src="/assets/prueba.png" alt="Cruz"/>
         <Carousel.Caption>
