@@ -1,7 +1,6 @@
 import Button from "react-bootstrap/Button";
 import "./Juego.css";
-import Barra from "../routes/Barra";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Juego() {
   const [jugador, setJugador] = useState("/assets/logo2.png");
@@ -66,7 +65,7 @@ function Juego() {
   return (
     <>
       <div>
-        <Barra />
+        <h1>Ver Juego</h1>
       </div>
       <section id="juego" className="gameContent">
         <div className="full-gameArea">
