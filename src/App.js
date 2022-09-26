@@ -17,7 +17,6 @@ function App() {
           <Route path='juego' element={<Juego/>}/>
           <Route path='integrantes' element={<Integrantes/>}/>
           <Route path='despedida' element={<Despedida/>}/>
-
           <Route path='*' element={<Navigate replace to="/"/>}/> 
         </Route>
       </Routes>
