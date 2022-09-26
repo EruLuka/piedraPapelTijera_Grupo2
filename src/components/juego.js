@@ -1,9 +1,8 @@
 import Button from "react-bootstrap/Button";
 import "./Juego.css";
-import Barra from "../routes/Barra";
 import { useEffect, useState } from "react";
 
-function Juego() {
+const Juego=()=> {
   const [jugador, setJugador] = useState("/assets/logo2.png");
   const [jugada, setJugada] = useState("/assets/SignoPregunta.png");
   const [jugadorCPU, setJugadorCPU] = useState("/assets/logo2.png");
@@ -64,10 +63,7 @@ function Juego() {
   };
 
   return (
-    <>
-      <div>
-        <Barra />
-      </div>
+    <div>
       <section id="juego" className="gameContent">
         <div className="full-gameArea">
           {/* Área izquierda */}
@@ -76,7 +72,7 @@ function Juego() {
               <img src={jugadaCPU} alt="imagen jugada cpu"></img>
             </div>
             <div className="img-jugador">
-              <h2>PUNTAJE: {puntaje}</h2>
+              <h2>PUNTAJE CPU: {puntajeCPU}</h2>
               <img src={jugador} alt="imagen jugador"></img>
             </div>
           </aside>
@@ -86,7 +82,7 @@ function Juego() {
             <div className="img-cpu">
               <img src={jugadorCPU} alt="imagen cpu"></img>
             </div>
-            <h2>PUNTAJE CPU: {puntajeCPU}</h2>
+            <h2>PUNTAJE JUGADOR: {puntaje}</h2>
             <div className="img-jugada-jugador">
               <img src={jugada} alt="imagen jugada jugador"></img>
             </div>
@@ -141,7 +137,7 @@ function Juego() {
           </Button>
         </footer>
       </section>
-    </>
+    </div>
   );
 }
 
