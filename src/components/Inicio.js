@@ -1,7 +1,7 @@
-import './inicio.css';
+import './Inicio.css';
 import Barra from './Barra';
 import Button from 'react-bootstrap/Button';
-import Pie from './Pie';
+
 
 
 function Inicio() {

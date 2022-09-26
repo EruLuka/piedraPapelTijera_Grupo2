@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import "./Juego.css";
 import Barra from "./Barra";
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 
 function Juego() {
   const [jugador, setJugador] = useState("/assets/logo2.png");
