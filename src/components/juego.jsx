@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import "./Juego.css";
-import Barra from "../routes/Barra";
+import Barra from './components/Barra';
 import { useEffect, useState } from "react";
 
 function Juego() {

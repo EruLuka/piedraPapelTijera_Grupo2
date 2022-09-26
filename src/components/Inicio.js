@@ -1,5 +1,5 @@
 import './Inicio.css';
-import Barra from '../routes/Barra';
+import Barra from './src/components/Barra';
 import Button from 'react-bootstrap/Button';
 
 
