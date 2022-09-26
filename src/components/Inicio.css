@@ -6,11 +6,15 @@ body{
 .section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    align-items: center;
 }
-img{
-    width: 430px;
-    height:430px;
 
+.logo-img{
+    height: auto;
+    width: 85vh;
+}
+
+.logo-img img{
+    height: auto;
+    width: 100%;
 }
