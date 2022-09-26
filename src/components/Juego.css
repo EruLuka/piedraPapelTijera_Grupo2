@@ -1,22 +1,53 @@
 .gameContent{
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     height: 85vh;
+    width: 100vw;
 }
 
 .full-gameArea{
-    height:75vh;
+    height:70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.left-area{
+.area{
     flex-direction: column;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-
+/* Área izquierda */
 .img-jugada-cpu{
+    text-align: right;
+}
+.img-jugada-cpu img{
     height: 25vh;
 }
 
 .img-jugador{
-    height: 50vh;
+    text-align: left;
+    width: 50vw;
+}
+.img-jugador img{
+    height: 40vh;
+}
+
+/* Área derecha */
+.img-cpu{
+    text-align: right;
+    width: 50vw;
+}
+.img-cpu img{
+    height: 25vh;
+}
+
+.img-jugada-jugador{
+    text-align: left;
+}
+.img-jugada-jugador img{
+    height: 40vh;
 }
 
 .choosing-area{
