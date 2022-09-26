@@ -1,17 +1,22 @@
+.Parrafo{
+    text-shadow: 6px 8px 2px black;
+}
+
 .Despedida img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 40%;
+    max-height: auto;
 }
 
 #despedida-titulo{
-    font-size: 50px;
+    font-size: 80px;
 }
 
 #despedida-texto1{
-    font-size: 80px;
+    font-size: 50px;
 }
 
 #despedida-texto2{
     font-size: 50px;
 }
+
 
