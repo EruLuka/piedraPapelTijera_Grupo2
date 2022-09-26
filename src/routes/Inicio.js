@@ -1,4 +1,4 @@
-import './Inicio.css';
+import '../components/Inicio.css';
 import Barra from '../routes/Barra';
 import Button from 'react-bootstrap/Button';
 
@@ -7,7 +7,7 @@ function Inicio() {
     return (
         <>
             <div>
-                <Barra/>
+                <h1>a</h1>
             </div>
 
             <div className='section'>

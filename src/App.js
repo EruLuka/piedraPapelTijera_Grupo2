@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes,Navigate } from 'react-router-dom';
 import './App.css';
-import Inicio from './components/Inicio';
-import Integrantes from "./components/Integrantes";
-import Juego from './components/juego';
-import Despedida from "./components/despedida";
+import Inicio from './routes/Inicio';
+import Integrantes from "./routes/Integrantes";
+import Juego from './routes/juego';
+import Despedida from "./routes/despedida";
 import Barra from './routes/Barra';
 
 
@@ -17,7 +17,6 @@ function App() {
           <Route path='juego' element={<Juego/>}/>
           <Route path='integrantes' element={<Integrantes/>}/>
           <Route path='despedida' element={<Despedida/>}/>
-
           <Route path='*' element={<Navigate replace to="/"/>}/> 
         </Route>
       </Routes>
