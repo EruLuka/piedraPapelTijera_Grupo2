@@ -1,6 +1,7 @@
 .carousel{
   text-align: center;
   padding: 2%;
+  width: 100vw;
 }
 
 .carousel-style {

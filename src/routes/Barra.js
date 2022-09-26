@@ -1,41 +1,38 @@
-import { Navbar } from "react-bootstrap"
-import { Link, Outlet } from "react-router-dom"
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link, Outlet } from "react-router-dom";
 import React from "react";
+import "./barra.css";
 
-class Barra extends React.Component {
-  render() {
-    return (
-      <>
-        <nav className="navbar navbar-expand-lg bg-success">
+const Barra = () => {
+  return (
+    <div>
+      <Navbar className="navBg" variant="dark" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">Grupo 2</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Link className="link" to="/">
+                Inicio
+              </Link>
+              <Link className="link" to="/juego">
+                Jugar
+              </Link>
+              <Link className="link" to="/integrantes">
+                Integrantes
+              </Link>
+              <Link className="link" to="/despedida">
+                Salir
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <section>
+        <Outlet></Outlet>
+      </section>
+    </div>
+  );
+};
 
-          <div className="container-fluid">
-            <link as={Link} to="/" >Poké PPT</link>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div className="navbar-nav">
-
-                <link as={Link} to="/" >Inicio</link>
-                <link as={Link} to="/juego" >Jugar</link>
-                <link as={Link} to="/integrantes" >Integrantes</link>
-                <link as={Link} to="/despedida" >Salir</link>
-                <a className="nav-link disabled">Grupo 2</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <section>
-          <Outlet>
-
-          </Outlet>
-        </section>
-      </>
-
-
-    );
-  }
-
-
-}
 export default Barra;

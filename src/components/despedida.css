@@ -1,3 +1,7 @@
+.Parrafo{
+    text-shadow: 6px 8px 2px black;
+}
+
 .Despedida img{
     max-width: 40%;
     max-height: auto;
