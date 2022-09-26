@@ -6,16 +6,16 @@ import { useEffect, useState } from "react";
 function Juego() {
   const [jugador, setJugador] = useState("/assets/logo2.png");
   const [jugada, setJugada] = useState("/assets/SignoPregunta.png");
-  const [jugadorCPU, setJugadorCPU] = useState("/assets/logo2.png");
+  const [jugadorCPU, setJugadorCPU] = useState("/assets/Mew.png");
   const [jugadaCPU, setJugadaCPU] = useState("/assets/SignoPregunta.png");
   const [puntaje, setPuntaje] = useState(0);
   const [puntajeCPU, setPuntajeCPU] = useState(0);
-  const [resultado, setResultado] = useState();
+  const [resultado, setResultado] = useState("Haz una jugada");
 
   const hacerJugada = (srcJugador, srcJugada, eleccion) => {
     setJugador(srcJugador);
     setJugada(srcJugada);
-    let enemigo = Math.floor(Math.random() * 4);
+    let enemigo = Math.floor(Math.random() * 3);
     let ataque = Math.floor(Math.random() * 3);
 
     console.log("CPU: " + puntajeCPU + " - Jugador: " + puntaje);
@@ -37,7 +37,6 @@ function Juego() {
         ataque = 2;
         break;
       case 3:
-        setJugadorCPU("/assets/Mew.png");
         if (ataque === 0) {
           setJugadaCPU("/assets/FireType.png");
         } else if (ataque === 1) {
@@ -54,9 +53,9 @@ function Juego() {
       (eleccion == 2 && ataque == 1)
     ) {
       setPuntaje(puntaje + 1);
-      setResultado("GANASTE!!!");
+      setResultado("¡¡¡GANASTE!!!");
     } else if (eleccion === ataque) {
-      setResultado("EMPATE!!!");
+      setResultado("¡¡¡EMPATE!!!");
     } else {
       setPuntajeCPU(puntajeCPU + 1);
       setResultado("PERDISTE :(");
@@ -69,14 +68,15 @@ function Juego() {
         <Barra />
       </div>
       <section id="juego" className="gameContent">
+        
         <div className="full-gameArea">
           {/* Área izquierda */}
           <aside className="area">
-            <div className="img-jugada-cpu">
-              <img src={jugadaCPU} alt="imagen jugada cpu"></img>
+            <div className="img-jugada-jugador">
+              <img src={jugada} alt="imagen jugada jugador"></img>
             </div>
+              <p>Puntaje: {puntaje}</p>
             <div className="img-jugador">
-              <p>punjer: {puntaje}</p>
               <img src={jugador} alt="imagen jugador"></img>
             </div>
           </aside>
@@ -87,11 +87,12 @@ function Juego() {
               <img src={jugadorCPU} alt="imagen cpu"></img>
             </div>
             <p>Puntaje CPU: {puntajeCPU}</p>
-            <div>
-              <img src={jugada} alt="imagen jugada jugador"></img>
+            <div className="img-jugada-cpu">
+              <img src={jugadaCPU} alt="imagen jugada cpu"></img>
             </div>
           </aside>
         </div>
+
 
         {/*Area central*/}
         <div className="resultado-area">

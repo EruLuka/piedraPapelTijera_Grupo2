@@ -1,8 +1,6 @@
-import './inicio.css';
+import './Inicio.css';
 import Barra from './Barra';
 import Button from 'react-bootstrap/Button';
-import Pie from './Pie';
-
 
 function Inicio() {
     return (
@@ -13,7 +11,7 @@ function Inicio() {
             </div>
 
             <div className='section'>
-             <img src="../public/assets/logocine.png" alt="Logo" className="logo-img"></img>
+             <img src="/assets/logo2.png" alt="Logo" className="logo-img"></img>
             </div>
             <div></div>
         </>

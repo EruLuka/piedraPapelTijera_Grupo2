@@ -3,10 +3,13 @@
     flex-direction: column;
     height: 85vh;
     width: 100vw;
+    background-image: url(/public/assets/FondoPelea.png);
+    background-size: cover;
+    background-position-y: -30vh;
 }
 
 .full-gameArea{
-    height:70vh;
+    height: 57.55vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,12 +18,10 @@
 .area{
     flex-direction: column;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 /* Área izquierda */
 .img-jugada-cpu{
-    text-align: right;
+    padding-left: 0vw;
 }
 .img-jugada-cpu img{
     height: 25vh;
@@ -28,6 +29,7 @@
 
 .img-jugador{
     text-align: left;
+    padding-left: 20vw;
     width: 50vw;
 }
 .img-jugador img{
@@ -37,23 +39,26 @@
 /* Área derecha */
 .img-cpu{
     text-align: right;
+    padding-right: 20vw;
     width: 50vw;
 }
 .img-cpu img{
-    height: 25vh;
+    height: 35vh;
 }
 
 .img-jugada-jugador{
-    text-align: left;
+    text-align: right;
+    padding-right: 19vw;
 }
 .img-jugada-jugador img{
-    height: 40vh;
+    height: 25vh;
 }
 
-.choosing-area{
-    background-image: url(/public/assets/Fondo2.jpg);
-    background-size: 100%;
-    height: 25vh;
+.resultado-area{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    offset-position: 30vh;
 }
 
 .choosing-area{
