@@ -1,12 +1,13 @@
+/* Área superior */
 .gameContent{
     display: flex;
     flex-direction: column;
     height: 85vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .full-gameArea{
-    height:70vh;
+    height:55vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,7 +28,7 @@
 }
 
 .img-jugador{
-    text-align: left;
+    text-align: center;
     width: 50vw;
 }
 .img-jugador img{
@@ -36,7 +37,7 @@
 
 /* Área derecha */
 .img-cpu{
-    text-align: right;
+    text-align: center;
     width: 50vw;
 }
 .img-cpu img{
@@ -47,9 +48,15 @@
     text-align: left;
 }
 .img-jugada-jugador img{
-    height: 40vh;
+    height: 25vh;
 }
 
+/* Área central */
+.resultado-area{
+    text-align:center;
+}
+
+/* Footer */
 .choosing-area{
     background-image: url(/public/assets/Fondo2.jpg);
     background-size: 100%;
