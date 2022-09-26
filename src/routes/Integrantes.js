@@ -8,14 +8,14 @@ function Integrantes() {
         <img src="/assets/prueba.png" alt="Cruz"/>
         <Carousel.Caption>
           <h3>Elias Maximiliano Cruz</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>In memorian</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img src="/assets/LópezPolo.jpg" alt="López Polo"/>
         <Carousel.Caption>
           <h3>Lucas Santiago López Polo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p><a href="https://twitter.com/EruLuka?t=-C9VnMVYIHm2oF1TakZvxA&s=09">Twitter</a></p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -23,7 +23,7 @@ function Integrantes() {
         <Carousel.Caption>
           <h3>Nicole Estefania Mendivil Cabrera</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            <a href="https://www.instagram.com/_nicoleca/">Instagram</a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -41,7 +41,7 @@ function Integrantes() {
         <Carousel.Caption>
           <h3>Agustín Cesar Sosa Correa</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            <a href="https://www.facebook.com/profile.php?id=100014236481694">Facebook</a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>

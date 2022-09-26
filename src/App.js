@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes,Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import Inicio from './routes/Inicio';
 import Integrantes from "./routes/Integrantes";
