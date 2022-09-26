@@ -1,21 +1,20 @@
 import './Inicio.css';
-import Barra from './Barra';
+import Barra from '../routes/Barra';
 import Button from 'react-bootstrap/Button';
-
 
 
 function Inicio() {
     return (
         <>
             <div>
-                <Barra>
-                </Barra>
+                <Barra/>
             </div>
 
             <div className='section'>
-             <img src="../public/assets/logocine.png" alt="Logo" className="logo-img"></img>
+             <img src="./assets/logo2.png" alt="Logo" className="logo-img"></img>
+             {/* <Button className="type-button" variant="dark" onClick={[]} >CLICK PARA JUGAR </Button> */}
             </div>
-            <div></div>
+
         </>
     );
 }
