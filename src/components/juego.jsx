@@ -49,9 +49,9 @@ function Juego() {
     }
 
     if (
-      (eleccion == 0 && ataque == 2) ||
-      (eleccion == 1 && ataque == 0) ||
-      (eleccion == 2 && ataque == 1)
+      (eleccion === 0 && ataque === 2) ||
+      (eleccion === 1 && ataque === 0) ||
+      (eleccion === 2 && ataque === 1)
     ) {
       setPuntaje(puntaje + 1);
       setResultado("GANASTE!!!");
@@ -76,7 +76,7 @@ function Juego() {
               <img src={jugadaCPU} alt="imagen jugada cpu"></img>
             </div>
             <div className="img-jugador">
-              <p>punjer: {puntaje}</p>
+              <h2>PUNTAJE: {puntaje}</h2>
               <img src={jugador} alt="imagen jugador"></img>
             </div>
           </aside>
@@ -86,8 +86,8 @@ function Juego() {
             <div className="img-cpu">
               <img src={jugadorCPU} alt="imagen cpu"></img>
             </div>
-            <p>Puntaje CPU: {puntajeCPU}</p>
-            <div>
+            <h2>PUNTAJE CPU: {puntajeCPU}</h2>
+            <div className="img-jugada-jugador">
               <img src={jugada} alt="imagen jugada jugador"></img>
             </div>
           </aside>
