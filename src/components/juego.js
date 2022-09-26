@@ -82,8 +82,10 @@ const Juego=()=> {
             <div className="img-cpu">
               <img src={jugadorCPU} alt="imagen cpu"></img>
             </div>
+
             <h2>PUNTAJE JUGADOR: {puntaje}</h2>
             <div className="img-jugada-jugador">
+
               <img src={jugada} alt="imagen jugada jugador"></img>
             </div>
           </aside>
