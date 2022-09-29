@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import "./Juego.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Juego=()=> {
   const [jugador, setJugador] = useState("/assets/logo2.png");
@@ -53,9 +53,9 @@ const Juego=()=> {
       (eleccion === 2 && ataque === 1)
     ) {
       setPuntaje(puntaje + 1);
-      setResultado("GANASTE!!!");
+      setResultado("¡¡¡GANASTE!!!");
     } else if (eleccion === ataque) {
-      setResultado("EMPATE!!!");
+      setResultado("¡¡¡EMPATE!!!");
     } else {
       setPuntajeCPU(puntajeCPU + 1);
       setResultado("PERDISTE :(");
