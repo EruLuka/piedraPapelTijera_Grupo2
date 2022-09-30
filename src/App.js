@@ -1,6 +1,10 @@
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
-import Barra from './components/Barra';
+import Inicio from './components/Inicio';
+import Integrantes from "./components/Integrantes";
+import Juego from './components/juego';
+import Despedida from "./components/despedida";
+import Barra from './routes/Barra';
 
 function App() {
   return (
