@@ -5,9 +5,6 @@ import Barra from './components/Barra';
 function App() {
   return (
     <div className="App">
-      <Barra/>
-    </div>
-    /* <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={< Barra />}>
@@ -20,7 +17,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div> */
+    </div>
   );
 }
 
